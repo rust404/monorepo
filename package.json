@@ -16,14 +16,10 @@
     "packages/*"
   ],
   "scripts": {
-    "local-publish": "lerna publish from-package"
+    "local-publish": "lerna publish from-package",
+    "commit": "git cz"
   },
   "config": {
     "commitizen": "cz-conventional-changelog"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   }
 }
