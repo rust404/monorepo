@@ -5,7 +5,9 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@commitlint/config-lerna-scopes": "^12.1.4",
+    "commitizen": "^4.2.4",
     "commitlint": "^12.1.4",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^6.0.0",
     "lerna": "^4.0.0",
     "lerna-changelog": "^1.0.1"
@@ -15,6 +17,9 @@
   ],
   "scripts": {
     "local-publish": "lerna publish from-package"
+  },
+  "config": {
+    "commitizen": "cz-conventional-changelog"
   },
   "husky": {
     "hooks": {
