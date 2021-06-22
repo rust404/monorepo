@@ -20,6 +20,8 @@
     "commit": "git cz"
   },
   "config": {
-    "commitizen": "cz-conventional-changelog"
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
