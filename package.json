@@ -8,6 +8,6 @@
     "packages/*"
   ],
   "scripts": {
-    "local-publish": "lerna publish"
+    "local-publish": "lerna publish from-package"
   }
 }

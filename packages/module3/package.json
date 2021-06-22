@@ -1,0 +1,29 @@
+{
+  "name": "module3",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "rust404 <rust404@outlook.com>",
+  "homepage": "https://github.com/rust404/monorepo#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rust404/monorepo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/rust404/monorepo/issues"
+  }
+}
