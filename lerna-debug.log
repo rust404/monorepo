@@ -1,0 +1,16 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/home/tanso/.yarn/bin/lerna',
+0 silly argv   pkg: 'lodash'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /mnt/d/front-end-dev/monorepo
+3 info versioning independent
+4 error FetchError: request to http://registry.npmjs.org/lodash failed, reason: socket hang up
+4 error     at ClientRequest.<anonymous> (/home/tanso/.config/yarn/global/node_modules/minipass-fetch/lib/index.js:97:14)
+4 error     at ClientRequest.emit (events.js:315:20)
+4 error     at Socket.socketOnEnd (_http_client.js:453:9)
+4 error     at Socket.emit (events.js:327:22)
+4 error     at endReadableNT (_stream_readable.js:1220:12)
