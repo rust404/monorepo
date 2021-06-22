@@ -1,6 +1,6 @@
 {
   "name": "module1",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "> TODO: description",
   "author": "rust404 <rust404@outlook.com>",
   "homepage": "",
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "module2": "^1.0.3"
+    "module2": "^1.0.4"
   },
   "gitHead": "a5f41b008263af6a4261ae9ede993c57da3c3ad3"
 }
