@@ -14,7 +14,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "lint": "eslint src --ext .ts,.tsx --config ../../.eslintrc.js"
   },
   "dependencies": {
     "lodash": "^4.17.21",

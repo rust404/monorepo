@@ -5,12 +5,19 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@commitlint/config-lerna-scopes": "^12.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "@umijs/fabric": "^2.6.2",
     "commitizen": "^4.2.4",
     "commitlint": "^12.1.4",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-react": "^7.24.0",
     "husky": "^6.0.0",
     "lerna": "^4.0.0",
-    "lerna-changelog": "^1.0.1"
+    "lerna-changelog": "^1.0.1",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1"
   },
   "workspaces": [
     "packages/*"
@@ -23,5 +30,10 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "prettier --write"
+    ]
   }
 }
