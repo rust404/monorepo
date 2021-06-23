@@ -1,5 +1,11 @@
 # module1
 
+## 2.2.0
+
+### Minor Changes
+
+- 7ca44e0: change module1
+
 ## 2.1.1
 
 ### Patch Changes
