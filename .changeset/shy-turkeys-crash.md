@@ -1,5 +1,5 @@
 ---
-'module1': minor
+'module1': patch
 ---
 
 module1 change
