@@ -1,5 +1,11 @@
 # module1
 
+## 2.1.1
+
+### Patch Changes
+
+- 09c3264: module1 change
+
 ## 2.1.0
 
 ### Minor Changes
