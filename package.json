@@ -8,6 +8,7 @@
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
     "@umijs/fabric": "^2.6.2",
+    "changeset": "^0.2.6",
     "commitizen": "^4.2.4",
     "commitlint": "^12.1.4",
     "cz-conventional-changelog": "^3.3.0",
@@ -24,7 +25,8 @@
   ],
   "scripts": {
     "local-publish": "lerna publish from-package",
-    "commit": "git cz"
+    "commit": "git cz",
+    "release": "changeset publish"
   },
   "config": {
     "commitizen": {

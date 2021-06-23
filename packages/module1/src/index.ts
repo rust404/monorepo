@@ -1,7 +1,9 @@
+import About from './About'
+
 const a: number = 1
 const b = 2
-function test(a: number, b: number) {
-  console.log(a, b)
+function test(x: number, y: number) {
+  console.log(x, y)
+  About()
 }
-console.log(a)
-test(1, 2)
+test(a, b)
