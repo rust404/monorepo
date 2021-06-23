@@ -1,0 +1,76 @@
+Arguments: 
+  /usr/local/bin/node /mnt/c/Program Files (x86)/Yarn/bin/yarn.js
+
+PATH: 
+  /home/tanso/.local/bin:/home/tanso/.autojump/bin:/home/tanso/.autojump/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/d/front-end-dev/monorepo/node_modules/.bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/d/cmder:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/tanso/Downloads/ffmpeg-N-102519-gdcb285d2b7-win64-gpl/ffmpeg-N-102519-gdcb285d2b7-win64-gpl/bin:/mnt/c/Users/tanso/Downloads/annie_0.10.3_Windows_64-bit:/mnt/c/Users/tanso/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/tanso/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/tanso/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/tanso/AppData/Roaming/npm:/mnt/c/Users/tanso/AppData/Local/Yarn/bin:/mnt/c/Users/tanso/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/tanso/AppData/Local/Programs/Fiddler:/home/tanso/.yarn/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: Client network socket disconnected before secure TLS connection was established
+      at connResetException (internal/errors.js:610:14)
+      at TLSSocket.onConnectEnd (_tls_wrap.js:1546:19)
+      at Object.onceWrapper (events.js:421:28)
+      at TLSSocket.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1220:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "monorepo",
+    "private": true,
+    "devDependencies": {
+      "@changesets/cli": "^2.16.0",
+      "@commitlint/cli": "^12.1.4",
+      "@commitlint/config-conventional": "^12.1.4",
+      "@commitlint/config-lerna-scopes": "^12.1.4",
+      "@typescript-eslint/eslint-plugin": "^4.28.0",
+      "@typescript-eslint/parser": "^4.28.0",
+      "@umijs/fabric": "^2.6.2",
+      "changeset": "^0.2.6",
+      "commitizen": "^4.2.4",
+      "commitlint": "^12.1.4",
+      "cz-conventional-changelog": "^3.3.0",
+      "eslint": "^7.29.0",
+      "eslint-plugin-react": "^7.24.0",
+      "husky": "^6.0.0",
+      "lerna": "^4.0.0",
+      "lerna-changelog": "^1.0.1",
+      "lint-staged": "^11.0.0",
+      "prettier": "^2.3.1"
+    },
+    "workspaces": [
+      "packages/*"
+    ],
+    "scripts": {
+      "local-publish": "lerna publish from-package --registry=http://localhost:4873",
+      "commit": "git cz",
+      "release": "changeset publish",
+      "version:pkgs": "changeset version",
+      "changeset": "changeset"
+    },
+    "config": {
+      "commitizen": {
+        "path": "cz-conventional-changelog"
+      }
+    },
+    "lint-staged": {
+      "**/*.{ts,tsx,js,jsx}": [
+        "prettier --write"
+      ]
+    },
+    "version": "0.0.0"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
