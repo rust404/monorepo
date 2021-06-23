@@ -28,7 +28,7 @@
     "local-publish": "lerna publish from-package",
     "commit": "git cz",
     "release": "changeset publish",
-    "version": "changeset version"
+    "version:pkgs": "changeset version"
   },
   "config": {
     "commitizen": {
