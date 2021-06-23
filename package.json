@@ -2,6 +2,7 @@
   "name": "monorepo",
   "private": true,
   "devDependencies": {
+    "@changesets/cli": "^2.16.0",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@commitlint/config-lerna-scopes": "^12.1.4",
@@ -26,7 +27,8 @@
   "scripts": {
     "local-publish": "lerna publish from-package",
     "commit": "git cz",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "version": "changeset version"
   },
   "config": {
     "commitizen": {
@@ -37,5 +39,6 @@
     "**/*.{ts,tsx,js,jsx}": [
       "prettier --write"
     ]
-  }
+  },
+  "version": "0.0.0"
 }
